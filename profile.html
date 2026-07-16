@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MagZel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="page">
+    <header class="header" id="mainHeader">
+        <div class="header__container">
+            <a href="index.html" class="header__logo">
+                <i class="fas fa-train"></i>
+                <span>MagZel</span>
+            </a>
+            
+            <button class="header__menu-toggle" id="menuToggle">
+                <span class="header__menu-line"></span>
+                <span class="header__menu-line"></span>
+                <span class="header__menu-line"></span>
+            </button>
+            
+            <nav class="header__nav" id="mainNav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Главная</a></li>
+                    <li class="nav__item"><a href="map.html" class="nav__link">Карта маршрутов</a></li>
+                    <li class="nav__item"><a href="profile.html" class="nav__link">Личный кабинет</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="section">
+            <div class="section__container">
+                <div class="section__header">
+                    <h2 class="section__title"><span>Личный</span> кабинет</h2>
+                    <p class="section__subtitle">Управляйте поездками и бонусами</p>
+                </div>
+                
+                <div class="profile">
+                    <div class="profile__card">
+                        <div class="profile__header">
+                            <div class="profile__avatar">
+                                <i class="fas fa-user-astronaut"></i>
+                            </div>
+                            <h3 class="profile__name">Артем Пленевич</h3>
+                            <p class="profile__id">ID пассажира: MLD-2024-0421</p>
+                        </div>
+                        <div class="profile__info">
+                            <div class="profile__info-item">
+                                <i class="fas fa-ticket-alt"></i>
+                                <div>
+                                    <span>Всего поездок</span>
+                                    <strong>24 поездки</strong>
+                                </div>
+                            </div>
+                            <div class="profile__info-item">
+                                <i class="fas fa-star"></i>
+                                <div>
+                                    <span>Бонусные баллы</span>
+                                    <strong>2 450 баллов</strong>
+                                </div>
+                            </div>
+                            <div class="profile__info-item">
+                                <i class="fas fa-gem"></i>
+                                <div>
+                                    <span>Статус</span>
+                                    <strong>Золотой пассажир</strong>
+                                </div>
+                            </div>
+                            <div class="profile__info-item">
+                                <i class="fas fa-chart-line"></i>
+                                <div>
+                                    <span>Километров преодолено</span>
+                                    <strong>12 450 км</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="profile__history">
+                        <h3 class="profile__history-title">История поездок</h3>
+                        <div class="history-table">
+                             <table>
+                                <thead>
+                                    <tr>
+                                        <th>Дата</th>
+                                        <th>Маршрут</th>
+                                        <th>Время</th>
+                                        <th>Статус</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>15.03.2026</td>
+                                        <td>Минск - Гомель</td>
+                                        <td>1ч 15мин</td>
+                                        <td class="status-completed">✅ Завершена</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10.03.2026</td>
+                                        <td>Минск - Витебск</td>
+                                        <td>2ч 15мин</td>
+                                        <td class="status-completed">✅ Завершена</td>
+                                    </tr>
+                                    <tr>
+                                        <td>05.03.2026</td>
+                                        <td>Гомель - Минск</td>
+                                        <td>1ч 15мин</td>
+                                        <td class="status-completed">✅ Завершена</td>
+                                    </tr>
+                                    <tr>
+                                        <td>28.02.2026</td>
+                                        <td>Минск - Брест</td>
+                                        <td>2ч 30мин</td>
+                                        <td class="status-upcoming">🕐 Предстоящая</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="section__container">
+                <div class="section__header">
+                    <h2 class="section__title"><span>Свяжитесь</span> с нами</h2>
+                    <p class="section__subtitle">Задайте вопрос или оставьте предложение</p>
+                </div>
+                
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label class="form-group__label">Ваше имя</label>
+                        <input type="text" class="form-group__input" placeholder="Иван Иванов" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-group__label">Email</label>
+                        <input type="email" class="form-group__input" placeholder="ivan@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-group__label">Сообщение</label>
+                        <textarea class="form-group__textarea" placeholder="Расскажите о вашем вопросе..." rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="form__button">
+                        <i class="fas fa-paper-plane"></i> Отправить сообщение
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__grid">
+                <div class="footer__about">
+                    <div class="footer__logo">
+                        <i class="fas fa-train"></i>
+                        <span>MagZel</span>
+                    </div>
+                    <p class="footer__text">
+                        Революционная система скоростного транспорта на магнитной левитации. 
+                        Быстро, безопасно, экологично.
+                    </p>
+                </div>
+                
+                <div class="footer__column">
+                    <h3 class="footer__title">Навигация</h3>
+                    <ul class="footer__list">
+                        <li class="footer__item"><a href="index.html" class="footer__link">Главная</a></li>
+                        <li class="footer__item"><a href="map.html" class="footer__link">Карта маршрутов</a></li>
+                        <li class="footer__item"><a href="profile.html" class="footer__link">Личный кабинет</a></li>
+                        <li class="footer__item"><a href="#contact" class="footer__link">Контакты</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__column">
+                    <h3 class="footer__title">Контакты</h3>
+                    <div class="footer__contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+375 29 221-92-37</span>
+                    </div>
+                    <div class="footer__contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>transport@magzel.by</span>
+                    </div>
+                    <div class="footer__contact-item">
+                        <i class="fas fa-clock"></i>
+                        <span>8:00 - 23:00</span>
+                    </div>
+                </div>
+                
+                <div class="footer__column">
+                    <h3 class="footer__title">Подписка</h3>
+                    <p class="footer__text">Будьте в курсе новостей</p>
+                    <form class="footer__newsletter" id="newsletterForm">
+                        <input type="email" placeholder="Ваш email">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p>© 2026 MagZel. Все права защищены.</p>
+                <div class="footer__links">
+                    <a href="#">Политика конфиденциальности</a>
+                    <a href="#">Условия использования</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html>
